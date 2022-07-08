@@ -4,8 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/drawable/border.xml" value="0.1" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_breathe.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_enquire.xml" value="0.2" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_face_fear.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_family.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_final.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_food.xml" value="0.264" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_hobby.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_login.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_physical.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_physical_task.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_registration.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/onkar/AndroidStudioProjects/Fight_Depression/app/src/main/res/layout/activity_share_emotion.xml" value="0.19791666666666666" />
       </map>
     </option>
   </component>

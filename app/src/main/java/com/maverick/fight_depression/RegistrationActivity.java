@@ -18,7 +18,12 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -81,14 +86,45 @@ public class RegistrationActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         progressBar.setVisibility(View.GONE);
-                                        Toast.makeText(RegistrationActivity.this, "Registered Succesfully", Toast.LENGTH_SHORT).show();
-//                                        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-//                                        firebaseUser.sendEmailVerification();
-//                                        Intent intent = new Intent(RegistrationActivity.this, UserProfileActivity.class);
-//                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
-//                                                | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                                        startActivity(intent);                        }
-//                                        finish();
+//                                        Toast.makeText(RegistrationActivity.this, "Registered Succesfully", Toast.LENGTH_SHORT).show();
+                                        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+
+                                        appUser newUser = new appUser(textFullName, textEmail, textPassword);
+
+                                        FirebaseDatabase database = FirebaseDatabase.getInstance();
+                                        DatabaseReference myRef = database.getReference("Users");
+                                        myRef.child(firebaseUser.getEmail()).setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                if(task.isSuccessful()){
+                                                    //Intent intent = new Intent(RegistrationActivity.this, UserProfileActivity.class);
+            //                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
+            //                                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+            //                                        startActivity(intent);                        }
+            //                                        finish();
+                                                    Toast.makeText(RegistrationActivity.this, "Profile Saved", Toast.LENGTH_SHORT).show();
+                                                }else{
+                                                    Toast.makeText(RegistrationActivity.this, "Profile Not Saved", Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                        });
+//
+                                    }else{
+                                        progressBar.setVisibility(View.GONE);
+                                        try{
+                                            throw task.getException();
+                                        }catch (FirebaseAuthWeakPasswordException e){
+                                            password.setError("Password too weak.");
+                                            password.requestFocus();
+                                        }catch (FirebaseAuthInvalidCredentialsException e){
+                                            email.setError("This Email is already registered");
+                                            email.requestFocus();
+                                        }catch (FirebaseAuthUserCollisionException e){
+                                            email.setError("This Email is already registered");
+                                            email.requestFocus();
+                                        }catch (Exception e){
+                                            Toast.makeText(RegistrationActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                                        }
                                     }
                                 }
                             }).addOnFailureListener(new OnFailureListener() {

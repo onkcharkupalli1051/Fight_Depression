@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".FamilyActivity"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/idActivityFamilyLogoText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Friends + Family = Good Times"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/idActivityFamilyText1"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/passion_one"
+        android:text="Family and friends are crucial to people because it can benefit a person's physical, emotional, and mental health, and what it offers human beings can't be found anywhere else."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/idActivityFamilyText2"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/passion_one"
+        android:text="Spend Time With Friends And Family"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/friends"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/idActivityFamilyTIMER"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/passion_one"
+        android:text="05:00"
+        android:textColor="@color/black"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="16dp"
+            android:id="@+id/idActivityFamilyStart"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/idActivityFamilyReset"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip To Next Task"
+        android:textSize="16dp"
+        android:id="@+id/idActivityFamilySkip"
+        />
+</LinearLayout>

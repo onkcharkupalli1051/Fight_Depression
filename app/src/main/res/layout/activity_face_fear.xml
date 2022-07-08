@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceFearActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/idActivityFaceFearLogoText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Face Your Fears"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/idActivityFaceFearText1"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/passion_one"
+        android:text="Avoiding fears only makes them scarier. Whatever your fear, if you face it, it should start to fade. If you panic one day getting into a lift, for example, it's best to get back into a lift the next day."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/courage"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="16dp"
+        android:id="@+id/idActivityFaceFearSkip"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

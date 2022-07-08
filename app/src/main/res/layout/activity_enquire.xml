@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enquireActivity"
+    android:gravity="center_horizontal"
+    android:padding="3dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/idActivityEnquireLogoText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="How are you feeling?"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    //Horizontal group 1
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        //child 1
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/idLLdepressed"
+            >
+
+            <ImageView
+                android:id="@+id/idActivityEnquireDepressedLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/depressed" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireTextViewDepressed"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Depressed"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        //child 2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/idLLhappy"
+            >
+
+            <ImageView
+                android:id="@+id/idActivityEnquireHappyLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/happy" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireHappyText"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Happy"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    //Horizontal group 2
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+        >
+        //child 1
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/idLLfeared"
+            >
+
+            <ImageView
+                android:id="@+id/idActivityEnquireFearLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/fear" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireTextViewFeared"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Feared"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        //child 2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/idLLangry"
+            >
+
+            <ImageView
+                android:id="@+id/idActivityEnquireAngryLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/angry" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireAngryText"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Angry"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //Horizontal group 3
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        >
+        //child 1
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:gravity="center_horizontal"
+            android:id="@+id/idLLdisgusted"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/idActivityEnquireDisgustLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/disgust" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireTextViewDisgust"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Disgusted"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        //child 2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/idLLsurprised"
+            >
+
+            <ImageView
+                android:id="@+id/idActivityEnquireSurprisedLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/surprised" />
+
+            <TextView
+                android:id="@+id/idActivityEnquireSurprisedText"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/passion_one"
+                android:text="Surprised"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

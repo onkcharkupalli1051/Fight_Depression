@@ -31,7 +31,7 @@
             android:fontFamily="@font/carter_one"
             android:text="Fight Depression"
             android:textColor="@color/black"
-            android:textSize="40dp" />
+            android:textSize="30dp" />
 
         <Button
             android:layout_width="match_parent"
