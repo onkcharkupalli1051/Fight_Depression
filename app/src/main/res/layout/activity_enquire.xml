@@ -43,8 +43,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireDepressedLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/depressed" />
 
@@ -75,8 +75,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireHappyLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/happy" />
 
@@ -118,8 +118,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireFearLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/fear" />
 
@@ -150,8 +150,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireAngryLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/angry" />
 
@@ -190,8 +190,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireDisgustLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/disgust" />
 
@@ -222,8 +222,8 @@
 
             <ImageView
                 android:id="@+id/idActivityEnquireSurprisedLogo"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/surprised" />
 
